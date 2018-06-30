@@ -12,5 +12,5 @@ dependencies {
     compile("org.springframework.cloud:spring-cloud-starter-netflix-hystrix:2.0.0.RELEASE")
 
     testCompile("junit:junit:4.+")
-    testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile("org.springframework.boot:spring-boot-starter-test:2.0.3.RELEASE")
 }

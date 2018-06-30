@@ -26,9 +26,6 @@ import org.springframework.context.annotation.Configuration;
 @EnableEurekaServer
 public class RegistryApplication {
 
-    public RegistryApplication() {
-    }
-
     public static void main(final String[] args) {
         SpringApplication.run(RegistryApplication.class, args);
     }
