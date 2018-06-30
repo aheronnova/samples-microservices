@@ -23,6 +23,21 @@ subprojects {
     repositories {
         mavenCentral()
     }
+
+    sonarqube {
+        properties {
+            property "sonar.sourceEncoding", "UTF-8"
+        }
+    }
+
+    sonarqube {
+        properties {
+            property "sonar.projectKey", "${group}:${project.name}"
+            property "sonar.projectName", "${group}:${project.name}"
+            property "sonar.projectDescription", "${description}"
+            property "sonar.projectVersion", "${version}"
+        }
+    }
 }
 
-//description = 'Elysium Core'
+description = 'Elysium Core'

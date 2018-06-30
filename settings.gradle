@@ -1,1 +1,2 @@
-include "registry", "security-api", "security"
+include 'registry', 'security-api', 'security'
+rootProject.name = 'elysium'

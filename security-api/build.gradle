@@ -11,3 +11,4 @@ jar {
                 'Implementation-Version': version
     }
 }
+
