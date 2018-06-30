@@ -1,0 +1,11 @@
+plugins {
+    id 'org.springframework.boot' version '2.0.3.RELEASE'
+}
+
+description = 'Elysium Services Registry'
+version = '0.0.1'
+
+dependencies {
+    compile("org.springframework.boot:spring-boot:2.0.3.RELEASE")
+    compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:2.0.0.RELEASE")
+}

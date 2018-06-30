@@ -1,0 +1,10 @@
+version: '3'
+services:
+  registry:
+    build: ./registry/
+    ports:
+      - "8082:9900"
+  security:
+    build: ./security/
+    links:
+      - registry

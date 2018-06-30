@@ -1,0 +1,16 @@
+plugins {
+    id 'org.springframework.boot' version '2.0.3.RELEASE'
+}
+
+description = 'Elysium Security WS'
+version = '0.0.1'
+
+dependencies {
+    compile project(':security-api')
+    compile("org.springframework.boot:spring-boot")
+    compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.0.RELEASE")
+    compile("org.springframework.cloud:spring-cloud-starter-netflix-hystrix:2.0.0.RELEASE")
+
+    testCompile("junit:junit:4.+")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+}

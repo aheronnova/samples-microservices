@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: registry
+
+server:
+  port: 9900
+  host: ${container.host:localhost}
+  contextPath:
+
+eureka:
+  region: default
+  instance:
+    hostname: ${server.host}
+    statusPageUrlPath: ${server.contextPath}/info
+    healthCheckUrlPath: ${server.contextPath}/health
+  serviceUrl:
+    default: http://${server.host}:${server.port}${server.contextPath}/eureka
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    healthcheck:
+      enabled: true
+  server:
+    enabled: true
+    ## for the example, set this to zero as we will not have peers to sync up with.
+    ## Do not set in a real environment with multi-node eureka clusters.
+    numberRegistrySyncRetries: 0
+    ## Set this only for this sample service without which starting the instance will by default wait
+    ## for the default of 5 mins
+    waitTimeInMsWhenSyncEmpty: 0

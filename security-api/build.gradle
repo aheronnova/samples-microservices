@@ -1,0 +1,13 @@
+description = 'Elysium Security WS API'
+version = '0.0.1'
+
+dependencies {
+    compile("org.springframework.cloud:spring-cloud-starter-openfeign:2.0.0.RELEASE")
+}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Elysium Security WS',
+                'Implementation-Version': version
+    }
+}
